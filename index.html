@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency_convert</title>
+</head>
+<body>
+  <form action="#">
+      <table>
+          <tr>
+              <th>
+                  <label for="amount">Amount</label> <br>
+                  <input type="number" name="Amount" id="amount"></th>
+              <th>
+                  <label for="F_Currency">From Currency</label> <br>
+                  <Select id="F_Currency">
+                      <option value="VND">VietNam</option>
+                      <option value="USD">USD</option>
+                  </Select>
+              </th>
+              <th>
+                  <label for="T_Currency">To Currency</label> <br>
+                  <Select id="T_Currency">
+                      <option value="USD">USD</option>
+                      <option value="VND">VietNam</option>
+                  </Select>
+              </th>
+              <td>
+                  <button type="button" onclick="convertMoney()">Convert</button>
+              </td>
+          </tr>
+      </table>
+      <p id="Result"></p>
+  </form>
+</body>
+</html>
+<script src="script.js"></script>
